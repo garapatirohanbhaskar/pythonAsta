@@ -1,0 +1,4 @@
+1. git 
+2. node js
+3. java 
+4. dsa
