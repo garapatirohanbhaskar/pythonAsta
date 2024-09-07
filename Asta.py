@@ -24,13 +24,13 @@ from newsapi import NewsApiClient
 
 
 EMAIL = "garapatirohanbhaskar@gmail.com"
-#PASSWORD = "rohanbhaskar145@gmai"
+
 PASSWORD = ""
 
-NEWS_API_KEY = "57b7ed5969d74b9ba04867ca958a5404"
+NEWS_API_KEY = ""
 newsapi = NewsApiClient(api_key=NEWS_API_KEY)
 
-openai.api_key = "sk-proj-MemVUuqBekSrrKUOyYTWT3BlbkFJ2xY590iTuWaNkT6i9YtO"
+openai.api_key = ""
 
 def get_openai_response(prompt):
     response = openai.Completion.create(
@@ -212,7 +212,7 @@ if __name__ == "__main__":
          ai(prompt=query)
          
      elif "calculate" in query:
-         app_id = "4RQ2T6-U2A42KY3G2"
+         app_id = ""
          client = wolframalpha.Client(app_id)
          ind = query.lower().split().index("calculate")  
          text = query.split()[ind + 1:]
@@ -226,7 +226,7 @@ if __name__ == "__main__":
              
         
      elif "what is" in query or "who is" in query or "which is" in query:
-          app_id = "4RQ2T6-U2A42KY3G2"
+          app_id = ""
           client = wolframalpha.Client(app_id)
           try:
               ind= query.lower().index('what is') if 'what is' in query.lower() else \

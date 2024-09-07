@@ -1,1 +1,1 @@
-api_data = "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"
+api_data = ""
